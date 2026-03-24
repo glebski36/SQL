@@ -1,4 +1,7 @@
-/* VALUES construct */
+/* VALUES construct 
+to generate, use something like:
+	  ,'(' + '''' + SOME_TEXT + ''','+ '''' + SOME_TEXT + ''','+ '''' + SOME_TEXT + ''','+ '''' + CAST([SOME_NUMBER] as char(1)) + '''' + ')' AS [VALUES_CLAUSE_LINE]
+*/
 WITH cte1 (col1, col2, col3) AS
 (
 SELECT * 
